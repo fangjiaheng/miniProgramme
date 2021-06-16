@@ -1,0 +1,31 @@
+<view class="goods-list">
+  <SearchInput/>
+  <view class="goodsList-container">
+    <Tabs tabs="{{tabs}}" bind:tapChildComponent="handleTap">
+      <block wx:if="{{tabs[0].isActive}}">
+        <navigator class="goods-item">
+          <view class="goods-img">
+            <image mode="widthFix" src="https://api-hmugo-web.itheima.net/pyg/banner1.png"></image>
+          </view>
+          <view class="goods-content">
+            <view class="goods-desc">
+              啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
+            </view>
+            <view class="goods-price">
+              ￥1399
+            </view>
+          </view>
+        </navigator>
+      </block>
+      <block wx:elif="{{tabs[1].isActive}}">
+        内容2
+      </block>
+      <block wx:elif="{{tabs[2].isActive}}">
+        内容3
+      </block>
+      <block wx:else>
+        内容4
+      </block>
+    </Tabs>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+.tabs-header{
+  display: flex;
+}
+.tabs-title{
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.active{
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentcolor;
+}
